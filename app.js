@@ -8,4 +8,7 @@ app.get("/", function(req, res) {
     res.render("home"); 
 }); 
 
-app.listen(port, () => console.log(`Example app listening on port port!`))
+app.listen(process.env.PORT || 3000, function (err){
+    console.log('server started on port 3000');
+
+})
