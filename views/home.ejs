@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>Crispy & Tasty</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+          }
+
+        body{
+          font-family: 'Lobster', serif;
+          animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        }
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        }
+       
+        .carousel {
+            transform: translate(0px, -89px);
+
+        }
+        .navbar {
+            background-color:transparent !important; 
+            z-index:2; 
+        }
+      
+
+        .navbar-dark.color-changed{
+            background-color:black!important;
+            }
+
+
+
+            // Small devices (landscape phones, 576px and up)
+            @media (min-width: 576px) { ... }
+            
+            // Medium devices (tablets, 768px and up)
+            @media (min-width: 768px) { ... }
+            
+            // Large devices (desktops, 992px and up)
+            @media (min-width: 992px) { ... }
+            
+            // Extra large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) { ... }
+
+            #header-carousel {
+                height: 700px;
+              }#img1 {
+                height: 700px;
+                background-image: url(Homemade_Canape_Papdi_Chaat.jpg);
+                background-position: center center;
+                background-size: cover;
+              }#img2 {
+                height: 700px;
+                background-image: url(vodka-pani-puri.png);
+                background-position: center center;
+                background-size: cover;
+              }#img3 {
+                height: 700px;
+                background-image: url(samosa.jpg);
+                background-position: center center;
+                background-size: cover;
+              }  
+
+              .overlay{
+
+                position:absolute; 
+                top:0; 
+                left:0; 
+                background-color:rgba(0,0,0,0.5); 
+                width:100%; 
+                height:700px; 
+              }
+
+              #text{
+                position:absolute; 
+                top:350px; 
+                color:white; 
+                left:0; 
+                text-shadow: 4px 4px 4px #aaa;
+                text-align:center; 
+                width:100%; 
+                padding:20px; 
+              }
+
+              #icon-holder{
+                text-align:center; 
+                position:absolute; 
+                  top:200px; 
+                  width:100%; 
+              }
+              #iocn-shop {
+                  
+
+              }
+
+              
+        .icon-scroll,
+        .icon-scroll:before {
+          position: absolute;
+          left: 50%;
+        }
+        .icon-scroll {
+          width: 40px;
+          height: 70px;
+          margin-left: -20px;
+          top: 600px;
+          margin-top: -35px;
+          box-shadow: inset 0 0 0 1px #fff;
+          border-radius: 25px;
+          z-index: 3;
+        }
+        .icon-scroll:before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          background: #fff;
+          margin-left: -4px;
+          top: 8px;
+          border-radius: 4px;
+          -webkit-animation-duration: 1.5s;
+                  animation-duration: 1.5s;
+          -webkit-animation-iteration-count: infinite;
+                  animation-iteration-count: infinite;
+          -webkit-animation-name: scroll;
+                  animation-name: scroll;
+        }
+        @-webkit-keyframes scroll {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+            -webkit-transform: translateY(46px);
+                    transform: translateY(46px);
+          }
+        }
+        @keyframes scroll {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+            -webkit-transform: translateY(46px);
+                    transform: translateY(46px);
+          }
+        }
+        
+        .add {
+        
+          border-bottom: .5px solid white;
+          margin-bottom: 15px;
+          margin-top:10px; 
+        
+        }
+        
+        .menu .card{
+          padding-top:15px; 
+          margin-bottom:15px; 
+        }
+
+        .menu .card .btn-danger{
+          color: #fff;
+    background-color: #7c0f19fa;
+    border-color: #7c0f19fa;
+        }
+        .row{
+          margin-right:0px; 
+          margin-left:0px; 
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.navbar-dark > button').on('click', function(){
+                $('.navbar-dark').toggleClass('color-changed');
+            });
+            });
+
+    </script>
+  </head>
+  <body>
+    <nav class="navbar  navbar-dark bg-dark ">
+        <a  style="padding:20px; color:rgb(172, 4, 4);  " class="navbar-brand" href="#"><svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-circle-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6a6 6 0 1 1 12 0A6 6 0 0 1 0 6z"/>
+            <path d="M12.93 5h1.57a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1.57a6.953 6.953 0 0 1-1-.22v1.79A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 4h-1.79c.097.324.17.658.22 1z"/>
+          </svg>
+          <span style="margin:15px; color:white">Crispy & Tasty</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#phone">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu-main">Menu</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="img1">
+          </div>
+          <div class="carousel-item" id="img2">
+          </div>
+          <div class="carousel-item" id="img3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        
+        <div class="overlay">
+
+
+        </div>
+        <div id="text" class="text-center">
+          <h2>Simply the best chaat. Crispy & Tasty </h2>
+        </div>
+        <div id="icon-holder">
+         
+          <svg id="shop-icon" width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-shop-window" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+        
+      </div>
+      <div class="icon-scroll">
+
+      </div>
+       
+      </div>
+
+      <div class="container-fluid" style=" transform: translate(0px, -89px); padding: 20px auto; background:#302939; color:white">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 text-center add">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+              <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+            </svg>
+            <h3 style="margin-top:10px;">Address</h3>
+            <p style="margin-top:5px;  "></p>New No. 26, Old No. 48, Kadambadi Amman Koil Street, Chinnandi madam, Kodungaiyur, chennai - 600 118<p></p>
+          </div>
+          <div id="phone" class="col-md-3 col-sm-6 text-center add">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+            </svg>
+            <h3 style="margin-top:10px;">Phone</h3>
+            <p style="margin-top:5px;  "></p>Mayank: +91 9042367467<p></p>
+          </div>
+          <div class="col-md-3 col-sm-6 text-center add">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"></path>
+              <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"></path>
+            </svg>
+            <h3 style="margin-top:10px;">Hours</h3>
+            <p style="margin-top:5px;  ">Sunday - Saturday </p>
+            <p>10 AM - 10 PM </p>
+          </div>
+          <div class="col-md-3 col-sm-6 text-center add">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-open" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.818l5.724 3.465L8 8.917l1.276.766L15 6.218V5.4a1 1 0 0 0-.53-.882l-6-3.2zM15 7.388l-4.754 2.877L15 13.117v-5.73zm-.035 6.874L8 10.083l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738zM1 13.117l4.754-2.852L1 7.387v5.73zM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2z"></path>
+            </svg>
+            <h3 style="margin-top:10px;">Email</h3>
+            <p style="margin-top:5px;  "></p>mayankmaheshsharma@gmail.com<p></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="jumbotron jumbotron-fluid" style="transform: translate(0px, -89px);">
+        <div class="container text-center">
+          <h1 class="display-4" id="menu-main">Our Menu</h1>
+          <p class="lead">Choose from a wide variety of delicious food</p>
+        </div>
+        <div class="row menu">
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bread Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.25/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Cheese Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.40/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Toast Sandwich</h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Cheese Toast Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Cheese Toast Sandwich Mayonnaise</h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.55/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bhujia Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bhujia Cheese Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Murku Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Murku Cheese Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Grilled Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.70/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Corn Grilled Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.75/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Masala Grilled Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.80/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Khakhra Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Khakhra Cheese Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.60/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">KBC Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">KBC Toast Sandwich </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.60/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Corn Capsicum Cheese Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Corn Cheese Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Chilli Cheese Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.40/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Corn Canapes </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Katori Chat </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Corn Mayonnaise Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.40/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Garlic Cheese Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.40/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Onion Capsicum Cheese Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.55/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Capsicum Cheese Toast</h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.45/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Double Cheese Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.60/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Onion Cheese Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.45/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Potato Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Potato Cheese Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.45/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Masala Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Masala Cheese Toast </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Pani Puri (8 piecess)</h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.20/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Sev Puri</h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.20/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Dahi Puri </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Cheese Sev Puri</h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.40/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Mayonnaise Sev Puri </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Mayonnaise Cheese Sev Puri </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.45/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bhujia Sev Puri </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.25/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bhujia Cheese Sev Puri </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.40/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bhel Puri </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Cheese Bhel Puri </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.50/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bread Stick </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bread Butter </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.20/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Masala Puff </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.20/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Masala Cheese Puff </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.40/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bhujia Puff </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.25/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bhujia Mayonnaise Puff </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bhujia Cheese Puff</h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.40/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Mayonnaise Puff</h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.30/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Bread Jam </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.20/-</h3></a></div></div></div>
+          <div class="col-sm-6"><div class="card"><div class="card-body"><h3 class="card-title">Cheese Jam </h3><a href="#" class="btn btn-danger"><h3 style="margin:0px;">Rs.40/-</h3></a></div></div></div>
+          
+
+
+        </div>
+      </div>
+    
+ 
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
