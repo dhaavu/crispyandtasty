@@ -1,0 +1,52 @@
+Item,Price,Category 
+Bread Sandwich,25,Sandwich 
+Cheese Sandwich,40,Sandwich 
+Toast Sandwich,30,Sandwich 
+Cheese Toast Sandwich,50,Sandwich 
+Cheese Toast Sandwich Mayonnaise,55,Sandwich 
+Bhujia Sandwich,30,Sandwich 
+Bhujia Cheese Sandwich,50,Sandwich 
+Murku Sandwich,30,Sandwich 
+Murku Cheese Sandwich,50,Sandwich 
+Grilled Sandwich,70,Sandwich 
+Corn Grilled Sandwich,75,Sandwich 
+Masala Grilled Sandwich,80,Sandwich 
+Khakhra Sandwich,50,Sandwich 
+Khakhra Cheese Sandwich,60,Sandwich 
+KBC Sandwich,50,Sandwich 
+KBC Toast Sandwich,60,Sandwich 
+Corn Capsicum Cheese Toast,50,Sandwich 
+Corn Cheese Toast,50,Sandwich 
+Chilli Cheese Toast,40,Sandwich 
+Corn Canapes,50,Chaat
+Katori Chat,50,Chaat
+Corn Mayonnaise Toast,40,Sandwich 
+Garlic Cheese Toast,40,Sandwich 
+Onion Capsicum Cheese Toast,55,Sandwich 
+Capsicum Cheese Toast,45,Sandwich 
+Double Cheese Toast,60,Sandwich 
+Onion Cheese Toast,45,Sandwich 
+Potato Toast,30,Sandwich 
+Potato Cheese Toast,45,Sandwich 
+Masala Toast,30,Sandwich 
+Masala Cheese Toast,50,Sandwich 
+Pani Puri (8 piecess),20,Chaat
+Sev Puri,20,Chaat
+Dahi Puri,30,Chaat
+Cheese Sev Puri,40,Chaat
+Mayonnaise Sev Puri,30,Chaat
+Mayonnaise Cheese Sev Puri,45,Chaat
+Bhujia Sev Puri,25,Chaat
+Bhujia Cheese Sev Puri,40,Chaat
+Bhel Puri,30,Chaat
+Cheese Bhel Puri,50,Chaat
+Bread Stick,30,Appetizer
+Bread Butter,20,Sandwich 
+Masala Puff,20,Appetizer
+Masala Cheese Puff,40,Appetizer
+Bhujia Puff,25,Appetizer
+Bhujia Mayonnaise Puff,30,Appetizer
+Bhujia Cheese Puff,40,Appetizer
+Mayonnaise Puff,30,Appetizer
+Bread Jam,20,Sandwich 
+Cheese Jam,40,Sandwich 
